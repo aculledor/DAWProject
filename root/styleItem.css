@@ -43,23 +43,6 @@ a{ text-decoration: none; }
     outline: none;
 }
 
-.navigationBar a.smallNav {
-    float: left;
-    color: #f2f2f2;
-    text-align: center;
-    font-size: 2.5vw;
-    outline: none;
-    padding: 1vw;
-}
-
-.navigationBar a.smallNav:hover {
-    background-color: #D8D9EB;
-    outline: ridge 2px rgb(58, 1, 61);
-    color: black;
-}
-
-
-
 /*------------------ Table format ------------------*/
 table .img-grid{
     position: relative;
@@ -75,13 +58,15 @@ table.img-grid tr {
     position: relative;
     background-color: #6064a8;
     outline: ridge 2px rgb(58, 1, 61);
-    padding: 10%;
+    margin: auto;
 }
 
 /*------------------ Contidos table format ------------------*/
 table.img-grid td {
     position: relative;
-    padding: 2%;
+    padding: 1%;
+    width: 33%;
+    height: 100%;
 }
 
 table.img-grid td.right {
@@ -91,7 +76,7 @@ table.img-grid td.right {
 
 .img-container img{
     width: 100%;
-    height: auto;
+    min-height: 20vh;
 }   
 
 .text-header{
@@ -112,12 +97,7 @@ table.img-grid td.right {
 
 /*------------------ Text format ------------------*/
 .articleText{
-    font-size: 1.5vh;
-    padding: 1%;
-}
-
-.smallArticleText{
-    font-size: 1.25vh;
+    font-size: 2vh;
     padding: 1%;
 }
 
@@ -139,3 +119,5 @@ span{
     font-size: large;
     position: absolute;
 }
+
+    

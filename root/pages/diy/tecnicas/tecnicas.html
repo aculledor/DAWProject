@@ -12,110 +12,116 @@
     <base href="/root/index.html">
 
     <!-- Favicon code https://www.favicon-generator.org/-->
+    <link rel="icon" type="image/png" sizes="16x16" href="/root/img/favicon/favicon-16x16.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/root/img/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="96x96" href="/root/img/favicon/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/root/img/favicon/favicon-16x16.png">
     <!-- CSS sheet link -->
-    <link rel="stylesheet" media="screen" href="./style.css">
+    <link rel="stylesheet" media="screen" href="/root/styleGridList.css">
 </head>
 
 <body>
     <!-- Header with logo and navigation menues -->
     <header>
-        <nav>
-            <a href="/root/index.html"><img src="/root/img/logo/logoCP.png" alt="logo" width="48" height="64"></a>
-            &nbsp;
-            <a href="/root/pages/pezas/pezas.html"><button type="button">PEZAS</button></a>
-            &nbsp;
-            <a href="/root/pages/materiais/materiais.html"><button type="button">MATERIAIS</button></a>
-            &nbsp;
-            <a href="/root/pages/diy/tecnicas/tecnicas.html"><button type="button">DIY</button></a>
-            &nbsp;
-            <a href="/root/pages/sobreMin/sobreMin_intro.html"><button type="button">SOBRE MIN</button></a>
-        </nav>
+        <div class="navigationBar">
+            <a class="img" href="/root/index.html"><img src="/root/img/logo/logoCP.png" alt="logo" ></a>
+            <a href="/root/pages/pezas/pezas.html">PEZAS</a>
+            <a href="/root/pages/materiais/materiais.html">MATERIAIS</a>
+            <a href="/root/pages/diy/tecnicas/tecnicas.html">DIY</a>
+            <a href="/root/pages/sobreMin/sobreMin_intro.html">SOBRE MIN</a>
+        </div>
     </header>
+    <section><br><br></section>
     <!------------------------------------------------------- Actual body of the page ------------------------------------------------------->
     <!-- Title and search section -->
-    <section>
-        <h1>Tecnicas</h1>
-        <table>
+    <section id="search">
+        <table class="img-grid">
+            <tr><td><div class="text-header">Tecnicas</div></td></tr>
             <tr>
-                <th>Nome <input type="search" name="item" id="techniqueSearcher"></th>
-                <th>Ordeación <button type="button">Criterio</button></th>
-                <th><button type="button">Buscar</button></th>
+                <td >
+                    <label class="search">Nome</label> 
+                    <input name="item" id="itemSearcher">
+                </td>
+                <td >
+                    <label class="search">Ordeación</label>
+                    <button type="button">Criterio</button>
+                </td>
+                <td >
+                    <button type="button">Buscar</button>
+                </td>
             </tr>
         </table>
     </section>
+    <section><br><br><br><br><br></section>
     <!-- List of items available -->
-    <section>
-        <h1>Lista</h1>
-        <table>
+    <section id="lista">
+        <table class="img-grid">
             <tr>
-                <th>
-                    <a href="/root/pages/diy/tecnicas/tecnica/tecnica.html">
-                        <section>
-                            <header>Seguetear</header>
-                            <img src="/root/img/tecnicas/seguetear.jpg" alt="seguetear" width="360" height="240">
-                        </section>
-                    </a>
-                </th>
-                <th>
-                    <a href="/root/pages/diy/tecnicas/tecnica/tecnica.html">
-                        <section>
-                            <header>Laminar</header>
-                            <img src="/root/img/tecnicas/laminar.jpg" alt="laminar" width="360" height="240">
-                        </section>
-                    </a>
-                </th>
-                <th>
-                    <a href="/root/pages/diy/tecnicas/tecnica/tecnica.html">
-                        <section>
-                            <header>Embutir</header>
-                            <img src="/root/img/tecnicas/embutido.jpg" alt="embutir" width="360" height="240">
-                        </section>
-                    </a>
-                </th>
+                <td>
+                    <div class="text-header">Lista</div>
+                </td>
             </tr>
             <tr>
-                <th>
+                <td>
                     <a href="/root/pages/diy/tecnicas/tecnica/tecnica.html">
-                        <section>
-                            <header>Trefilar</header>
-                            <img src="/root/img/tecnicas/trefilar.jpg" alt="trefilar" width="360" height="240">
-                        </section>
+                        <div class="img-container">
+                            <div class="text-header">Seguetear</div>
+                            <img src="/root/img/tecnicas/seguetear.jpg" alt="seguetear">
+                        </div>
                     </a>
-                </th>
-                <th>
+                </td>
+                <td>
                     <a href="/root/pages/diy/tecnicas/tecnica/tecnica.html">
-                        <section>
-                            <header>Pulir</header>
-                            <img src="/root/img/tecnicas/pulir.jpg" alt="pulir" width="360" height="240">
-                        </section>
+                        <div class="img-container">
+                            <div class="text-header">Laminar</div>
+                            <img src="/root/img/tecnicas/laminar.jpg" alt="laminar">
+                        </div>
                     </a>
-                </th>
-                <th>
+                </td>
+                <td>
                     <a href="/root/pages/diy/tecnicas/tecnica/tecnica.html">
-                        <section>
-                            <header>Recocer</header>
-                            <img src="/root/img/tecnicas/recocer.jpg" alt="recocer" width="360" height="240">
-                        </section>
+                        <div class="img-container">
+                            <div class="text-header">Embutir</div>
+                            <img src="/root/img/tecnicas/embutido.jpg" alt="embutir">
+                        </div>
                     </a>
-                </th>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="/root/pages/diy/tecnicas/tecnica/tecnica.html">
+                        <div class="img-container">
+                            <div class="text-header">Trefilar</div>
+                            <img src="/root/img/tecnicas/trefilar.jpg" alt="trefilar">
+                        </div>
+                    </a>
+                </td>
+                <td>
+                    <a href="/root/pages/diy/tecnicas/tecnica/tecnica.html">
+                        <div class="img-container">
+                            <div class="text-header">Pulir</div>
+                            <img src="/root/img/tecnicas/pulir.jpg" alt="pulir">
+                        </div>
+                    </a>
+                </td>
+                <td>
+                    <a href="/root/pages/diy/tecnicas/tecnica/tecnica.html">
+                        <div class="img-container">
+                            <div class="text-header">Recocer</div>
+                            <img src="/root/img/tecnicas/recocer.jpg" alt="recocer">
+                        </div>
+                    </a>
+                </td>
             </tr>
         </table>
     </section>
     <!-- Footer with version and social network icons -->
     <footer>
-        Version 1.1.0
-        <div style="text-align:right;">
-            <a href="https://twitter.com/" target="_blank"><img src="/root/img/socialNetworks/twitter.ico" alt="twitter"
-                    width="32" height="32"></a>
-            <a href="https://www.instagram.com/" target="_blank"><img src="/root/img/socialNetworks/instagram.ico"
-                    alt="instagram" width="32" height="32"></a>
-            <a href="https://www.facebook.com/" target="_blank"><img src="/root/img/socialNetworks/facebook.ico"
-                    alt="facebook" width="32" height="32"></a>
-            <a href="https://mail.google.com/" target="_blank"><img src="/root/img/socialNetworks/gmail.ico" alt="gmail"
-                    width="32" height="32"></a>
+        <span>Version 1.2.0</span>
+        <div>
+            <a href="https://twitter.com/" target="_blank"><img src="/root/img/socialNetworks/twitter.ico" alt="twitter" width="32" height="32"></a>
+            <a href="https://www.instagram.com/" target="_blank"><img src="/root/img/socialNetworks/instagram.ico" alt="instagram" width="32" height="32"></a>
+            <a href="https://www.facebook.com/" target="_blank"><img src="/root/img/socialNetworks/facebook.ico" alt="facebook" width="32" height="32"></a>
+            <a href="https://mail.google.com/" target="_blank"><img src="/root/img/socialNetworks/gmail.ico" alt="gmail" width="32" height="32"></a>
         </div>
     </footer>
 </body>

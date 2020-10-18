@@ -12,30 +12,36 @@
     <base href="/root/index.html">
 
     <!-- Favicon code https://www.favicon-generator.org/-->
+    <link rel="icon" type="image/png" sizes="16x16" href="/root/img/favicon/favicon-16x16.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/root/img/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="96x96" href="/root/img/favicon/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/root/img/favicon/favicon-16x16.png">
     <!-- CSS sheet link -->
-    <link rel="stylesheet" media="screen" href="./style.css">
+    <link rel="stylesheet" media="screen" href="/root/pages/sobreMin/style.css">
 </head>
 
 <body>
     <!-- Header with logo and navigation menues -->
     <header>
-        <nav>
-            <a href="/root/index.html"><img src="/root/img/logo/logoCP.png" alt="logo" width="48" height="64"></a>
-            &nbsp;
-            <a href="/root/pages/pezas/pezas.html"><button type="button">PEZAS</button></a>
-            &nbsp;
-            <a href="/root/pages/materiais/materiais.html"><button type="button">MATERIAIS</button></a>
-            &nbsp;
-            <a href="/root/pages/diy/tecnicas/tecnicas.html"><button type="button">DIY</button></a>
-            &nbsp;
-            <a href="/root/pages/sobreMin/sobreMin_intro.html"><button type="button">SOBRE MIN</button></a>
-        </nav>
+        <div class="navigationBar">
+            <a class="img" href="/root/index.html"><img src="/root/img/logo/logoCP.png" alt="logo" ></a>
+            <a href="/root/pages/pezas/pezas.html">PEZAS</a>
+            <a href="/root/pages/materiais/materiais.html">MATERIAIS</a>
+            <a href="/root/pages/diy/tecnicas/tecnicas.html">DIY</a>
+            <a href="/root/pages/sobreMin/sobreMin_intro.html">SOBRE MIN</a>
+        </div>
     </header>
+    <section><br><br></section>
     <!-- Actual body of the page -->
     <section>
+        <!-- Header of the section -->
+        <header>
+            <div class="navigationBar">
+                <a class="smallNav" href="/root/pages/sobreMin/sobreMin_intro.html">Introducion</a>
+                <a class="smallNav" href="/root/pages/sobreMin/sobreMin_curr.html">Curriculum</a>
+                <a class="smallNav" href="/root/pages/sobreMin/sobreMin_redes.html">Redes Sociais</a>
+            </div>
+        </header>
+        <br><br><br>
         <table>
             <tr>
                 <td><a href="https://twitter.com/" target="_blank"><img src="/root/img/sobreMin/twitter128.png"
@@ -84,16 +90,12 @@
     </section>
     <!-- Footer with version and social network icons -->
     <footer>
-        Version 1.1.0
-        <div style="text-align:right;">
-            <a href="https://twitter.com/" target="_blank"><img src="/root/img/socialNetworks/twitter.ico" alt="twitter"
-                    width="32" height="32"></a>
-            <a href="https://www.instagram.com/" target="_blank"><img src="/root/img/socialNetworks/instagram.ico"
-                    alt="instagram" width="32" height="32"></a>
-            <a href="https://www.facebook.com/" target="_blank"><img src="/root/img/socialNetworks/facebook.ico"
-                    alt="facebook" width="32" height="32"></a>
-            <a href="https://mail.google.com/" target="_blank"><img src="/root/img/socialNetworks/gmail.ico" alt="gmail"
-                    width="32" height="32"></a>
+        <span>Version 1.2.0</span>
+        <div>
+            <a href="https://twitter.com/" target="_blank"><img src="/root/img/socialNetworks/twitter.ico" alt="twitter" width="32" height="32"></a>
+            <a href="https://www.instagram.com/" target="_blank"><img src="/root/img/socialNetworks/instagram.ico" alt="instagram" width="32" height="32"></a>
+            <a href="https://www.facebook.com/" target="_blank"><img src="/root/img/socialNetworks/facebook.ico" alt="facebook" width="32" height="32"></a>
+            <a href="https://mail.google.com/" target="_blank"><img src="/root/img/socialNetworks/gmail.ico" alt="gmail" width="32" height="32"></a>
         </div>
     </footer>
 </body>

@@ -1,7 +1,7 @@
 /*------------------ Page format ------------------*/
 body{ height:100vh; margin:0; background: rgb(216, 217, 235);}
-header{ min-height:auto; background:#6064a8; box-shadow: 0 2px 20px #3a013d;}
-footer{ min-height:50px; background:#6064a8; box-shadow: 0 2px 20px #3a013d; position: relative; width: 100%;}
+header{ min-height:auto; background:rgb(96, 100, 168); box-shadow: 0 2px 20px #3a013d;}
+footer{ min-height:50px; background:rgb(96, 100, 168); box-shadow: 0 2px 20px #3a013d; position: relative; width: 100%;}
 body{display:flex; flex-direction:column; }
 footer{margin-top:auto;}
 
@@ -43,23 +43,6 @@ a{ text-decoration: none; }
     outline: none;
 }
 
-.navigationBar a.smallNav {
-    float: left;
-    color: #f2f2f2;
-    text-align: center;
-    font-size: 2.5vw;
-    outline: none;
-    padding: 1vw;
-}
-
-.navigationBar a.smallNav:hover {
-    background-color: #D8D9EB;
-    outline: ridge 2px rgb(58, 1, 61);
-    color: black;
-}
-
-
-
 /*------------------ Table format ------------------*/
 table .img-grid{
     position: relative;
@@ -73,15 +56,15 @@ table.img-grid tr {
 
 .img-container{
     position: relative;
-    background-color: #6064a8;
     outline: ridge 2px rgb(58, 1, 61);
-    padding: 10%;
 }
 
 /*------------------ Contidos table format ------------------*/
 table.img-grid td {
     position: relative;
-    padding: 2%;
+    padding: 1%;
+    width: 33%;
+    height: 100%;
 }
 
 table.img-grid td.right {
@@ -91,7 +74,8 @@ table.img-grid td.right {
 
 .img-container img{
     width: 100%;
-    height: auto;
+    height: 40vw;
+    display: block;
 }   
 
 .text-header{
@@ -110,15 +94,16 @@ table.img-grid td.right {
     text-transform: uppercase;
 }
 
-/*------------------ Text format ------------------*/
-.articleText{
-    font-size: 1.5vh;
-    padding: 1%;
+/*------------------ Footer format ------------------*/
+.img-grid button{
+    font-size: 1.5vw;
 }
+label.search{
+    font-size: 2vw;
+} 
 
-.smallArticleText{
-    font-size: 1.25vh;
-    padding: 1%;
+input.search{
+    margin: 1%;
 }
 
 /*------------------ Footer format ------------------*/
@@ -139,3 +124,5 @@ span{
     font-size: large;
     position: absolute;
 }
+
+    

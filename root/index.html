@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<!-- head -->
+<!-- head  -->
 <head>
     <meta charset="UTF-8">
     <title>Home</title>
@@ -12,9 +12,9 @@
     <base href="/root/index.html">
 
     <!-- Favicon code https://www.favicon-generator.org/-->
+    <link rel="icon" type="image/png" sizes="16x16" href="/root/img/favicon/favicon-16x16.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/root/img/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="96x96" href="/root/img/favicon/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/root/img/favicon/favicon-16x16.png">
     <!-- CSS sheet link -->
     <link rel="stylesheet" media="screen" href="./style.css">
 </head>
@@ -23,109 +23,99 @@
 <body>
     <!-- Header with logo and navigation menues -->
     <header>
-        <nav>
-            <a href="/root/index.html"><img src="/root/img/logo/logoCP.png" alt="logo" width="48" height="64"></a>
-            &nbsp;
-            <a href="/root/pages/pezas/pezas.html"><button type="button">PEZAS</button></a>
-            &nbsp;
-            <a href="/root/pages/materiais/materiais.html"><button type="button">MATERIAIS</button></a>
-            &nbsp;
-            <a href="/root/pages/diy/tecnicas/tecnicas.html"><button type="button">DIY</button></a>
-            &nbsp;
-            <a href="/root/pages/sobreMin/sobreMin_intro.html"><button type="button">SOBRE MIN</button></a>
-        </nav>
+        <div class="navigationBar">
+            <a class="img" href="/root/index.html"><img src="/root/img/logo/logoCP.png" alt="logo" ></a>
+            <a href="/root/pages/pezas/pezas.html">PEZAS</a>
+            <a href="/root/pages/materiais/materiais.html">MATERIAIS</a>
+            <a href="/root/pages/diy/tecnicas/tecnicas.html">DIY</a>
+            <a href="/root/pages/sobreMin/sobreMin_intro.html">SOBRE MIN</a>
+        </div>
     </header>
+    <section><br><br></section>
     <!------------------------------------------------------- Actual body of the page ------------------------------------------------------->
     <!-- News section -->
-    <section>
-        <table>
+    <section id="novidades">
+        <table class="img-grid">
+            <tr><td class="novidades right"><div class="text-header">Novidades</div></td></tr>
             <tr>
-                <th>
-                    <h1>Novidades</h1>
-                </th>
-            </tr>
-            <tr>
-                <th>
+                <td class="novidades" >
                     <a href="/root/pages/materiais/material/material.html">
-                        <figure>
-                            <img src="/root/img/news/plata.jpg" alt="prata" width="200" height="120">
-                            <figcaption>Prata</figcaption>
-                        </figure>
+                        <div class="img-container">
+                            <div class="text-header">Prata</div>
+                            <img class="novidades" src="/root/img/news/plata.jpg" alt="prata">
+                        </div>
                     </a>
-                </th>
-                <th>
+                </td>
+                <td class="novidades" >
                     <a href="/root/pages/pezas/peza/peza.html">
-                        <figure>
-                            <img src="/root/img/news/roca.jpg" alt="roca" width="200" height="120">
-                            <figcaption>Roca</figcaption>
-                        </figure>
+                        <div class="img-container">
+                            <div class="text-header">Coio</div>
+                            <img class="novidades" src="/root/img/news/roca.jpg" alt="roca">
+                        </div>
                     </a>
-                </th>
-                <th>
+                </td>
+                <td class="novidades" >
                     <a href="/root/pages/diy/tecnicas/tecnica/tecnica.html">
-                        <figure>
-                            <img src="/root/img/news/recocer.jpg" alt="recocer" width="200" height="120">
-                            <figcaption>Recocer</figcaption>
-                        </figure>
+                        <div class="img-container">
+                            <div class="text-header">Recocer</div>
+                            <img class="novidades" src="/root/img/news/recocer.jpg" alt="recocer">
+                        </div>
                     </a>
-                </th>
+                </td>
             </tr>
         </table>
     </section>
+    <section><br><br><br><br><br></section>
     <!-- Image grid -->
-    <section>
-        <h1>Contido da web</h1>
-        <table>
+    <section id="contidos">
+        <table class="img-grid">
+            <tr><td class="contidos right"><div class="img-container"><div class="text-header">Contido da Web</div></div></td></tr>
             <tr>
-                <th>
+                <td class="contidos" >
                     <a href="/root/pages/pezas/pezas.html">
-                        <figure>
-                            <img src="/root/img/home/joyaDiff.jpg" alt="pezas" width="480" height="360">
-                            <figcaption>PEZAS</figcaption>
-                        </figure>
+                        <div class="img-container">
+                            <img class="contidos" src="/root/img/home/joyaDiff.jpg" alt="pezas">
+                            <div class="text-overlay">PEZAS</div>
+                        </div>
                     </a>
-                </th>
-                <th>
+                </td>
+                <td class="contidos" >
                     <a href="/root/pages/materiais/materiais.html">
-                        <figure>
-                            <img src="/root/img/home/oroDiff.jpg" alt="materiais" width="480" height="360">
-                            <figcaption>MATERIAIS</figcaption>
-                        </figure>
+                        <div class="img-container">
+                            <img class="contidos" src="/root/img/home/oroDiff.jpg" alt="materiais">
+                            <div class="text-overlay">MATERIAIS</div>
+                        </div>
                     </a>
-                </th>
+                </td>
             </tr>
             <tr>
-                <th>
+                <td class="contidos" >
                     <a href="/root/pages/diy/tecnicas/tecnicas.html">
-                        <figure>
-                            <img src="/root/img/home/seguetearDiff.jpg" alt="diy" width="480" height="360">
-                            <figcaption>DIY</figcaption>
-                        </figure>
+                        <div class="img-container">
+                            <img class="contidos" src="/root/img/home/seguetearDiff.jpg" alt="diy">
+                            <div class="text-overlay">DIY</div>
+                        </div>
                     </a>
-                </th>
-                <th>
+                </td>
+                <td class="contidos" >
                     <a href="/root/pages/sobreMin/sobreMin_intro.html">
-                        <figure>
-                            <img src="/root/img/home/pablocimadevilaDiff.jpg" alt="sobre min" width="480" height="360">
-                            <figcaption>SOBRE MIN</figcaption>
-                        </figure>
+                        <div class="img-container">
+                            <img class="contidos" src="/root/img/home/pablocimadevilaDiff.jpg" alt="sobre min">
+                            <div class="text-overlay">Sobre min</div>
+                        </div>
                     </a>
-                </th>
+                </td>
             </tr>
         </table>
     </section>
     <!-- Footer with version and social network icons -->
     <footer>
-        Version 1.1.0
-        <div style="text-align:right;">
-            <a href="https://twitter.com/" target="_blank"><img src="/root/img/socialNetworks/twitter.ico" alt="twitter"
-                    width="32" height="32"></a>
-            <a href="https://www.instagram.com/" target="_blank"><img src="/root/img/socialNetworks/instagram.ico"
-                    alt="instagram" width="32" height="32"></a>
-            <a href="https://www.facebook.com/" target="_blank"><img src="/root/img/socialNetworks/facebook.ico"
-                    alt="facebook" width="32" height="32"></a>
-            <a href="https://mail.google.com/" target="_blank"><img src="/root/img/socialNetworks/gmail.ico" alt="gmail"
-                    width="32" height="32"></a>
+        <span>Version 1.1.0</span>
+        <div>
+            <a href="https://twitter.com/" target="_blank"><img src="/root/img/socialNetworks/twitter.ico" alt="twitter" width="32" height="32"></a>
+            <a href="https://www.instagram.com/" target="_blank"><img src="/root/img/socialNetworks/instagram.ico" alt="instagram" width="32" height="32"></a>
+            <a href="https://www.facebook.com/" target="_blank"><img src="/root/img/socialNetworks/facebook.ico" alt="facebook" width="32" height="32"></a>
+            <a href="https://mail.google.com/" target="_blank"><img src="/root/img/socialNetworks/gmail.ico" alt="gmail" width="32" height="32"></a>
         </div>
     </footer>
 </body>

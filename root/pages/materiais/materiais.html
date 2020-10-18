@@ -12,110 +12,116 @@
     <base href="/root/index.html">
 
     <!-- Favicon code https://www.favicon-generator.org/-->
+    <link rel="icon" type="image/png" sizes="16x16" href="/root/img/favicon/favicon-16x16.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/root/img/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="96x96" href="/root/img/favicon/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/root/img/favicon/favicon-16x16.png">
     <!-- CSS sheet link -->
-    <link rel="stylesheet" media="screen" href="./style.css">
+    <link rel="stylesheet" media="screen" href="/root/styleGridList.css">
 </head>
 
 <body>
     <!-- Header with logo and navigation menues -->
     <header>
-        <nav>
-            <a href="/root/index.html"><img src="/root/img/logo/logoCP.png" alt="logo" width="48" height="64"></a>
-            &nbsp;
-            <a href="/root/pages/pezas/pezas.html"><button type="button">PEZAS</button></a>
-            &nbsp;
-            <a href="/root/pages/materiais/materiais.html"><button type="button">MATERIAIS</button></a>
-            &nbsp;
-            <a href="/root/pages/diy/tecnicas/tecnicas.html"><button type="button">DIY</button></a>
-            &nbsp;
-            <a href="/root/pages/sobreMin/sobreMin_intro.html"><button type="button">SOBRE MIN</button></a>
-        </nav>
+        <div class="navigationBar">
+            <a class="img" href="/root/index.html"><img src="/root/img/logo/logoCP.png" alt="logo" ></a>
+            <a href="/root/pages/pezas/pezas.html">PEZAS</a>
+            <a href="/root/pages/materiais/materiais.html">MATERIAIS</a>
+            <a href="/root/pages/diy/tecnicas/tecnicas.html">DIY</a>
+            <a href="/root/pages/sobreMin/sobreMin_intro.html">SOBRE MIN</a>
+        </div>
     </header>
+    <section><br><br></section>
     <!------------------------------------------------------- Actual body of the page ------------------------------------------------------->
     <!-- Title and search section -->
-    <section>
-        <h1>Materiais</h1>
-        <table>
+    <section id="search">
+        <table class="img-grid">
+            <tr><td><div class="text-header">Materiais</div></td></tr>
             <tr>
-                <th>Nome <input type="search" name="item" id="materialSearcher"></th>
-                <th>Ordeación <button type="button">Criterio</button></th>
-                <th><button type="button">Buscar</button></th>
+                <td >
+                    <label class="search">Nome</label> 
+                    <input name="item" id="itemSearcher">
+                </td>
+                <td >
+                    <label class="search">Ordeación</label>
+                    <button type="button">Criterio</button>
+                </td>
+                <td >
+                    <button type="button">Buscar</button>
+                </td>
             </tr>
         </table>
     </section>
+    <section><br><br><br><br><br></section>
     <!-- List of items available -->
-    <section>
-        <h1>Lista</h1>
-        <table>
+    <section id="lista">
+        <table class="img-grid">
             <tr>
-                <th>
-                    <a href="/root/pages/materiais/material/material.html">
-                        <section>
-                            <header>Paxaro</header>
-                            <img src="/root/img/materiais/oro.jpg" alt="ouro" width="360" height="240">
-                        </section>
-                    </a>
-                </th>
-                <th>
-                    <a href="/root/pages/materiais/material/material.html">
-                        <section>
-                            <header>Colar</header>
-                            <img src="/root/img/materiais/plata.jpg" alt="prata" width="360" height="240">
-                        </section>
-                    </a>
-                </th>
-                <th>
-                    <a href="/root/pages/materiais/material/material.html">
-                        <section>
-                            <header>Mexunxe</header>
-                            <img src="/root/img/materiais/cera.jpg" alt="cera" width="360" height="240">
-                        </section>
-                    </a>
-                </th>
+                <td>
+                    <div class="text-header">Lista</div>
+                </td>
             </tr>
             <tr>
-                <th>
+                <td>
                     <a href="/root/pages/materiais/material/material.html">
-                        <section>
-                            <header>Escorpion</header>
-                            <img src="/root/img/materiais/polvoVitreo.jpg" alt="polvo" width="360" height="240">
-                        </section>
+                        <div class="img-container">
+                            <div class="text-header">Ouro</div>
+                            <img src="/root/img/materiais/oro.jpg" alt="paxaro">
+                        </div>
                     </a>
-                </th>
-                <th>
+                </td>
+                <td>
                     <a href="/root/pages/materiais/material/material.html">
-                        <section>
-                            <header>Indio</header>
-                            <img src="/root/img/materiais/cobre.jpg" alt="cobro" width="360" height="240">
-                        </section>
+                        <div class="img-container">
+                            <div class="text-header">Prata</div>
+                            <img src="/root/img/materiais/plata.jpg" alt="prata">
+                        </div>
                     </a>
-                </th>
-                <th>
+                </td>
+                <td>
                     <a href="/root/pages/materiais/material/material.html">
-                        <section>
-                            <header>Coio</header>
-                            <img src="/root/img/materiais/laton.jpg" alt="laton" width="360" height="240">
-                        </section>
+                        <div class="img-container">
+                            <div class="text-header">Cera</div>
+                            <img src="/root/img/materiais/cera.jpg" alt="cera">
+                        </div>
                     </a>
-                </th>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="/root/pages/materiais/material/material.html">
+                        <div class="img-container">
+                            <div class="text-header">Polvo</div>
+                            <img src="/root/img/materiais/polvoVitreo.jpg" alt="polvo">
+                        </div>
+                    </a>
+                </td>
+                <td>
+                    <a href="/root/pages/materiais/material/material.html">
+                        <div class="img-container">
+                            <div class="text-header">Cobre</div>
+                            <img src="/root/img/materiais/cobre.jpg" alt="cobre">
+                        </div>
+                    </a>
+                </td>
+                <td>
+                    <a href="/root/pages/materiais/material/material.html">
+                        <div class="img-container">
+                            <div class="text-header">Laton</div>
+                            <img src="/root/img/materiais/laton.jpg" alt="laton">
+                        </div>
+                    </a>
+                </td>
             </tr>
         </table>
     </section>
     <!-- Footer with version and social network icons -->
     <footer>
-        Version 1.1.0
-        <div style="text-align:right;">
-            <a href="https://twitter.com/" target="_blank"><img src="/root/img/socialNetworks/twitter.ico" alt="twitter"
-                    width="32" height="32"></a>
-            <a href="https://www.instagram.com/" target="_blank"><img src="/root/img/socialNetworks/instagram.ico"
-                    alt="instagram" width="32" height="32"></a>
-            <a href="https://www.facebook.com/" target="_blank"><img src="/root/img/socialNetworks/facebook.ico"
-                    alt="facebook" width="32" height="32"></a>
-            <a href="https://mail.google.com/" target="_blank"><img src="/root/img/socialNetworks/gmail.ico" alt="gmail"
-                    width="32" height="32"></a>
+        <span>Version 1.2.0</span>
+        <div>
+            <a href="https://twitter.com/" target="_blank"><img src="/root/img/socialNetworks/twitter.ico" alt="twitter" width="32" height="32"></a>
+            <a href="https://www.instagram.com/" target="_blank"><img src="/root/img/socialNetworks/instagram.ico" alt="instagram" width="32" height="32"></a>
+            <a href="https://www.facebook.com/" target="_blank"><img src="/root/img/socialNetworks/facebook.ico" alt="facebook" width="32" height="32"></a>
+            <a href="https://mail.google.com/" target="_blank"><img src="/root/img/socialNetworks/gmail.ico" alt="gmail" width="32" height="32"></a>
         </div>
     </footer>
 </body>
