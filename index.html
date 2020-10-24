@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<!-- head  -->
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="author" content="Abraham Trashorras Rivas">
+	<meta name="description" content="Practica para a materia de DAW do GrEI da USC">
+    <base href="/index.html">
+
+    <!-- Favicon code https://www.favicon-generator.org/-->
+    <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/img/favicon/favicon-96x96.png">
+    <!-- CSS sheet link -->
+    <link rel="stylesheet" media="screen" href="./style.css">
+</head>
+
+<!-- body -->
+<body onload ="startTimer()">
+    <!-- Header with logo and navigation menues -->
+    <header>
+        <div class="navigationBar">
+            <a class="img" href="/index.html"><img src="/img/logo/logoCP.png" alt="logo" ></a>
+            <a href="/pages/pezas/pezas.html">PEZAS</a>
+            <a href="/pages/materiais/materiais.html">MATERIAIS</a>
+            <a href="/pages/diy/tecnicas/tecnicas.html">DIY</a>
+            <a onclick = "showSubmenu()">SOBRE MIN</a>
+            <div id="subMenu" class="hide">
+                <a href="/pages/sobreMin/sobreMin_intro.html">Introduccion</a>
+                <a href="/pages/sobreMin/sobreMin_curr.html">Curriculum</a>
+                <a href="/pages/sobreMin/sobreMin_redes.html">Redes Sociais</a>
+            </div>
+        </div>
+    </header>
+    <section><br><br></section>
+    <!------------------------------------------------------- Actual body of the page ------------------------------------------------------->
+    <!-- News section -->
+    <section id="novidades">
+        <table class="img-grid">
+            <tr><td class="novidades right"><div class="text-header">Novidades</div></td></tr>
+            <tr>
+                <td class="novidades" >
+                    <a href="/pages/materiais/material/material.html">
+                        <div class="img-container">
+                            <div class="text-header">Prata</div>
+                            <img class="novidades" src="/img/news/plata.jpg" alt="prata">
+                        </div>
+                    </a>
+                </td>
+                <td class="novidades" >
+                    <a href="/pages/pezas/peza/peza.html">
+                        <div class="img-container">
+                            <div class="text-header">Coio</div>
+                            <img class="novidades" src="/img/news/roca.jpg" alt="roca">
+                        </div>
+                    </a>
+                </td>
+                <td class="novidades" >
+                    <a href="/pages/diy/tecnicas/tecnica/tecnica.html">
+                        <div class="img-container">
+                            <div class="text-header">Recocer</div>
+                            <img class="novidades" src="/img/news/recocer.jpg" alt="recocer">
+                        </div>
+                    </a>
+                </td>
+            </tr>
+        </table>
+    </section>
+    <section><br><br><br><br><br></section>
+    <!-- Image grid -->
+    <section id="contidos">
+        <table class="img-grid">
+            <tr><td class="contidos right"><div class="img-container"><div class="text-header">Contido da Web</div></div></td></tr>
+            <tr>
+                <td class="contidos" >
+                    <a href="/pages/pezas/pezas.html">
+                        <div class="img-container">
+                            <img class="contidos" src="/img/home/joyaDiff.jpg" alt="pezas">
+                            <div class="text-overlay">PEZAS</div>
+                        </div>
+                    </a>
+                </td>
+                <td class="contidos" >
+                    <a href="/pages/materiais/materiais.html">
+                        <div class="img-container">
+                            <img class="contidos" src="/img/home/oroDiff.jpg" alt="materiais">
+                            <div class="text-overlay">MATERIAIS</div>
+                        </div>
+                    </a>
+                </td>
+            </tr>
+            <tr>
+                <td class="contidos" >
+                    <a href="/pages/diy/tecnicas/tecnicas.html">
+                        <div class="img-container">
+                            <img class="contidos" src="/img/home/seguetearDiff.jpg" alt="diy">
+                            <div class="text-overlay">DIY</div>
+                        </div>
+                    </a>
+                </td>
+                <td class="contidos" >
+                    <a href="/pages/sobreMin/sobreMin_intro.html">
+                        <div class="img-container">
+                            <img class="contidos" src="/img/home/pablocimadevilaDiff.jpg" alt="sobre min">
+                            <div class="text-overlay">Sobre min</div>
+                        </div>
+                    </a>
+                </td>
+            </tr>
+        </table>
+    </section>
+    <!-- Footer with version and social network icons -->
+    <footer>
+        <span>Version 1.1.0</span>
+        <div>
+            <a href="https://twitter.com/" target="_blank"><img src="/img/socialNetworks/twitter.ico" alt="twitter" width="32" height="32"></a>
+            <a href="https://www.instagram.com/" target="_blank"><img src="/img/socialNetworks/instagram.ico" alt="instagram" width="32" height="32"></a>
+            <a href="https://www.facebook.com/" target="_blank"><img src="/img/socialNetworks/facebook.ico" alt="facebook" width="32" height="32"></a>
+            <a href="https://mail.google.com/" target="_blank"><img src="/img/socialNetworks/gmail.ico" alt="gmail" width="32" height="32"></a>
+        </div>
+    </footer>
+    <script src="index.js"></script>
+</body>
+
+</html>

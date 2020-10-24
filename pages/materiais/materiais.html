@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<!-- head -->
+<head>
+    <meta charset="UTF-8">
+    <title>Materiais</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="author" content="Abraham Trashorras Rivas">
+	<meta name="description" content="Practica para a materia de DAW do GrEI da USC">
+    <base href="/index.html">
+
+    <!-- Favicon code https://www.favicon-generator.org/-->
+    <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/img/favicon/favicon-96x96.png">
+    <!-- CSS sheet link -->
+    <link rel="stylesheet" media="screen" href="/styleGridList.css">
+</head>
+
+<!-- body -->
+<body onload ="startTimer()">
+    <!-- Header with logo and navigation menues -->
+    <header>
+        <div class="navigationBar">
+            <a class="img" href="/index.html"><img src="/img/logo/logoCP.png" alt="logo" ></a>
+            <a href="/pages/pezas/pezas.html">PEZAS</a>
+            <a href="/pages/materiais/materiais.html">MATERIAIS</a>
+            <a href="/pages/diy/tecnicas/tecnicas.html">DIY</a>
+            <a onclick = "showSubmenu()">SOBRE MIN</a>
+            <div id="subMenu" class="hide">
+                <a href="/pages/sobreMin/sobreMin_intro.html">Introduccion</a>
+                <a href="/pages/sobreMin/sobreMin_curr.html">Curriculum</a>
+                <a href="/pages/sobreMin/sobreMin_redes.html">Redes Sociais</a>
+            </div>
+        </div>
+    </header>
+    <section><br><br></section>
+    <!------------------------------------------------------- Actual body of the page ------------------------------------------------------->
+    <!-- Title and search section -->
+    <section id="search">
+        <table class="img-grid">
+            <tr><td><div class="text-header">Materiais</div></td></tr>
+            <tr>
+                <td >
+                    <label class="search">Nome</label> 
+                    <input name="item" id="itemSearcher">
+                </td>
+                <td >
+                    <label class="search">Ordeación</label>
+                    <button type="button">Criterio</button>
+                </td>
+                <td >
+                    <button type="button">Buscar</button>
+                </td>
+            </tr>
+        </table>
+    </section>
+    <section><br><br><br><br><br></section>
+    <!-- List of items available -->
+    <section id="lista">
+        <table class="img-grid">
+            <tr>
+                <td>
+                    <div class="text-header">Lista</div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="/pages/materiais/material/material.html">
+                        <div class="img-container">
+                            <div class="text-header">Ouro</div>
+                            <img src="/img/materiais/oro.jpg" alt="paxaro">
+                        </div>
+                    </a>
+                </td>
+                <td>
+                    <a href="/pages/materiais/material/material.html">
+                        <div class="img-container">
+                            <div class="text-header">Prata</div>
+                            <img src="/img/materiais/plata.jpg" alt="prata">
+                        </div>
+                    </a>
+                </td>
+                <td>
+                    <a href="/pages/materiais/material/material.html">
+                        <div class="img-container">
+                            <div class="text-header">Cera</div>
+                            <img src="/img/materiais/cera.jpg" alt="cera">
+                        </div>
+                    </a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="/pages/materiais/material/material.html">
+                        <div class="img-container">
+                            <div class="text-header">Polvo</div>
+                            <img src="/img/materiais/polvoVitreo.jpg" alt="polvo">
+                        </div>
+                    </a>
+                </td>
+                <td>
+                    <a href="/pages/materiais/material/material.html">
+                        <div class="img-container">
+                            <div class="text-header">Cobre</div>
+                            <img src="/img/materiais/cobre.jpg" alt="cobre">
+                        </div>
+                    </a>
+                </td>
+                <td>
+                    <a href="/pages/materiais/material/material.html">
+                        <div class="img-container">
+                            <div class="text-header">Laton</div>
+                            <img src="/img/materiais/laton.jpg" alt="laton">
+                        </div>
+                    </a>
+                </td>
+            </tr>
+        </table>
+    </section>
+    <!-- Footer with version and social network icons -->
+    <footer>
+        <span>Version 1.2.0</span>
+        <div>
+            <a href="https://twitter.com/" target="_blank"><img src="/img/socialNetworks/twitter.ico" alt="twitter" width="32" height="32"></a>
+            <a href="https://www.instagram.com/" target="_blank"><img src="/img/socialNetworks/instagram.ico" alt="instagram" width="32" height="32"></a>
+            <a href="https://www.facebook.com/" target="_blank"><img src="/img/socialNetworks/facebook.ico" alt="facebook" width="32" height="32"></a>
+            <a href="https://mail.google.com/" target="_blank"><img src="/img/socialNetworks/gmail.ico" alt="gmail" width="32" height="32"></a>
+        </div>
+    </footer>
+    <script src="/list.js"></script>
+</body>
+
+</html>

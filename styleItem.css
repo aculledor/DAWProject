@@ -1,0 +1,126 @@
+/*------------------ Page format ------------------*/
+body{ height:100vh; margin:0; background: rgb(216, 217, 235);}
+header{ min-height:auto; background:#6064a8; box-shadow: 0 2px 20px #3a013d;}
+footer{ min-height:50px; background:#6064a8; box-shadow: 0 2px 20px #3a013d; position: relative; width: 100%;}
+body{display:flex; flex-direction:column; }
+footer{margin-top:auto;}
+
+/*------------------ Elements format ------------------*/
+a{ text-decoration: none; }
+
+/*------------------ Navigation Bar format ------------------*/
+.navigationBar {
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+}
+
+.navigationBar a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    font-size: 5vw;
+    outline: ridge 2px rgb(58, 1, 61);
+    padding: 1vw;
+}
+
+.navigationBar a:hover {
+    background-color: #D8D9EB;
+    outline: ridge 2px rgb(58, 1, 61);
+    color: black;
+}
+
+.navigationBar a.active {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.navigationBar img{
+    width: 3vw;
+}
+
+.navigationBar a.img {
+    outline: none;
+}
+
+/*------------------ Table format ------------------*/
+table .img-grid{
+    position: relative;
+}
+
+table.img-grid tr {
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+.img-container{
+    position: relative;
+    background-color: #6064a8;
+    outline: ridge 2px rgb(58, 1, 61);
+    margin: auto;
+}
+
+/*------------------ Contidos table format ------------------*/
+table.img-grid td {
+    position: relative;
+    padding: 1%;
+    width: 33%;
+    height: 100%;
+}
+
+table.img-grid td.right {
+    position: relative;
+    left: 66.5%;
+}
+
+.img-container img{
+    width: 100%;
+    min-height: 20vh;
+}   
+
+.text-header{
+    outline: ridge 2px rgb(58, 1, 61);
+    position: relative;
+    top: 0;
+    left: 0;
+    display: flex;
+    height: 30%;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(173, 113, 176, 1.0);
+    font-size: 4vw;
+    color:white;
+    text-transform: uppercase;
+}
+
+/*------------------ Text format ------------------*/
+.articleText{
+    font-size: 2vh;
+    padding: 1%;
+}
+
+/*------------------ Footer format ------------------*/
+footer{
+    text-align: center;
+}
+
+footer div{
+    float: right;
+    padding-top: 0.5%;
+    padding-right: 1%;
+}
+
+span{
+    left: 0;
+    top: 33%;
+    padding-left: 1%;
+    font-size: large;
+    position: absolute;
+}
+
+/*------------------ Submenu hide and show ------------------*/
+.hide{display:none;}
+
+    
