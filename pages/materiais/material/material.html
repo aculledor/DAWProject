@@ -17,6 +17,18 @@
     <link rel="icon" type="image/png" sizes="96x96" href="/img/favicon/favicon-96x96.png">
     <!-- CSS sheet link -->
     <link rel="stylesheet" media="screen" href="/styleItem.css">
+    <!-- jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+    $(document).ready(function(){
+        $("#text1").mouseenter(function(){
+            $("#text2").hide();
+        });
+        $("#versionTag").click(function(){
+            alert("Version 1.5.0!");
+        });
+    });
+    </script>
 </head>
 
 <!-- body -->
@@ -33,6 +45,7 @@
                 <a href="/pages/sobreMin/sobreMin_intro.html">Introduccion</a>
                 <a href="/pages/sobreMin/sobreMin_curr.html">Curriculum</a>
                 <a href="/pages/sobreMin/sobreMin_redes.html">Redes Sociais</a>
+                <a href="/pages/sobreMin/sobreMin_recomend.html">Recomendados</a>
             </div>
         </div>
     </header>
@@ -45,27 +58,31 @@
             <div class="img-container"><img src="/img/materiais/laton.jpg" alt="laton"></div>
             <div class="articleText">
                 <br>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vestibulum interdum leo, id auctor tortor
-                posuere a. Quisque lorem felis, consequat in justo nec, scelerisque fermentum massa. Phasellus auctor a elit
-                sodales posuere. Fusce pulvinar egestas purus nec fermentum. Lorem ipsum dolor sit amet, consectetur
-                adipiscing elit. Cras eleifend augue eget dui vehicula consectetur. Curabitur eu pharetra velit. Quisque
-                semper, dui sagittis sodales vulputate, arcu orci aliquam dui, eu sollicitudin elit sapien quis libero.
-                Morbi vitae eros ligula. Praesent sed turpis metus. Aliquam erat volutpat. Nunc massa lectus, tempor at
-                sodales sed, vestibulum in sem. Nam tristique laoreet metus fringilla scelerisque.
+                <p id="text1">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vestibulum interdum leo, id auctor tortor
+                    posuere a. Quisque lorem felis, consequat in justo nec, scelerisque fermentum massa. Phasellus auctor a elit
+                    sodales posuere. Fusce pulvinar egestas purus nec fermentum. Lorem ipsum dolor sit amet, consectetur
+                    adipiscing elit. Cras eleifend augue eget dui vehicula consectetur. Curabitur eu pharetra velit. Quisque
+                    semper, dui sagittis sodales vulputate, arcu orci aliquam dui, eu sollicitudin elit sapien quis libero.
+                    Morbi vitae eros ligula. Praesent sed turpis metus. Aliquam erat volutpat. Nunc massa lectus, tempor at
+                    sodales sed, vestibulum in sem. Nam tristique laoreet metus fringilla scelerisque.
+                </p>
                 <br>
                 <br>
-                Suspendisse potenti. Nam vitae diam metus. Curabitur sed est metus. Donec dignissim sit amet massa in
-                rutrum. Ut lacus diam, fermentum non volutpat a, molestie id nisi. Interdum et malesuada fames ac ante ipsum
-                primis in faucibus. Maecenas faucibus ullamcorper sagittis. Curabitur luctus, felis eget efficitur maximus,
-                sapien ante blandit eros, vitae dignissim dolor velit sed est. Morbi at pulvinar felis, nec sollicitudin
-                sapien. Proin dignissim non urna posuere scelerisque. Integer non quam a tellus suscipit aliquet.
+                <p id="text2">
+                    Suspendisse potenti. Nam vitae diam metus. Curabitur sed est metus. Donec dignissim sit amet massa in
+                    rutrum. Ut lacus diam, fermentum non volutpat a, molestie id nisi. Interdum et malesuada fames ac ante ipsum
+                    primis in faucibus. Maecenas faucibus ullamcorper sagittis. Curabitur luctus, felis eget efficitur maximus,
+                    sapien ante blandit eros, vitae dignissim dolor velit sed est. Morbi at pulvinar felis, nec sollicitudin
+                    sapien. Proin dignissim non urna posuere scelerisque. Integer non quam a tellus suscipit aliquet.
+                </p>
             </div>
         </article>
     </section>
     <br>
     <!-- Footer with version and social network icons -->
     <footer>
-        <span>Version 1.2.0</span>
+        <span id="versionTag">Version 1.2.0 (clickeame)</span>
         <div>
             <a href="https://twitter.com/" target="_blank"><img src="/img/socialNetworks/twitter.ico" alt="twitter" width="32" height="32"></a>
             <a href="https://www.instagram.com/" target="_blank"><img src="/img/socialNetworks/instagram.ico" alt="instagram" width="32" height="32"></a>
@@ -73,7 +90,6 @@
             <a href="https://mail.google.com/" target="_blank"><img src="/img/socialNetworks/gmail.ico" alt="gmail" width="32" height="32"></a>
         </div>
     </footer>
-    <script src="/list.js"></script>
 </body>
 
 </html>

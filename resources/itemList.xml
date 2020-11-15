@@ -1,0 +1,36 @@
+<!-- Xoias -->
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<!DOCTYPE items PUBLIC "itemList.xml">
+
+<items>
+    <!-- Colar -->
+    <item>
+        <name>Colar</name>
+        <image href="File:///itemImg/collar.jpg"></image>
+    </item>
+    <!-- Collar -->
+    <item>
+        <name>Colar</name>
+        <image href="File:///itemImg/collar2.jpg"></image>
+    </item>
+    <!-- Mexunxe -->
+    <item>
+        <name>Mexunxe</name>
+        <image href="File:///itemImg/mejunje.jpg"></image>
+    </item>
+    <!-- Escorpion -->
+    <item>
+        <name>Escorpion</name>
+        <image href="File:///itemImg/scorpio.jpg"></image>
+    </item>
+    <!-- Indio -->
+    <item>
+        <name>Indio</name>
+        <image href="File:///itemImg/joya.jpg"></image>
+    </item>
+    <!-- Coio -->
+    <item>
+        <name>Coio</name>
+        <image href="File:///itemImg/roca.jpg"></image>
+    </item>
+</items>

@@ -1,0 +1,20 @@
+{
+    "people": [
+        {
+            "name" : "Laura",
+            "image" : "/peopleImg/laura.jpg"
+        },
+        {
+            "name" : "Maria",
+            "image" : "/peopleImg/maria.jpg"
+        },
+        {
+            "name" : "Raul",
+            "image" : "/peopleImg/raul.jpg"
+        },
+        {
+            "name" : "Adrian",
+            "image" : "/peopleImg/adrian.jpg"
+        }
+    ]
+}
